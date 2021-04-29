@@ -43,7 +43,10 @@ const cityList = [{
  * @returns all cities where population is lower than the specified and the area
  * is greater then the specified.
  */
-const cityFilter = (list, population, area) => {};
+ const cityFilter = (list, popul, ar) => {
+    return list.filter( filterItem => filterItem.population < popul && filterItem.area > ar )
+    .map( mapItem => mapItem.name );
+};
 
 const citySorter = (list, key) => {};
 
